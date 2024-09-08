@@ -1,5 +1,124 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+  background-attachment: fixed;
+ /* font-size: var(--main-font-size); */ 
+}
+
+.header {
+  block-size: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  font-size: 18px;
+  gap: 75px;
+}
+
+.decorated-zone {
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__theme-menu {
+  margin: var(--page-margin);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border:  none;
+  font-family: inherit;
+  color: var(--accent-color);
+  text-transform: lowercase;
+  padding: 0 13px;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  inset-block-start: 20px;
+  inset-inline-end: 48px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+
+}
+
+.icon::after {
+  content: '';
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 5px 2px var(--accent-color) ;
+  position: absolute;
+  border-radius: 50%;
+  inset-inline-start: 42px;
+  inset-block-start: 5px;
+ /*TODO add position */
+}
+
+.heading {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: bold;
+  color: var(--main-heading-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__description {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.3em;
+  inline-size: calc(50% - var(--page-margin));
+  /*TODO has to b adaptive */
+  block-size: 71px;
+  justify-self: flex-end;
+  margin-inline-end: var(--page-margin);
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+}
+
+@media (width < 1024px) {
+  .header__theme-menu {
+   align-content: center;
+  }
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (width < 768px) {
+  
+
+  .heading {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    line-height: 82.5%;
+  }
+
+  .header__description {
+    inline-size: 100%;
+  }
+}
+
+.article__header {
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 1.3rem;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--accent-color);
 }

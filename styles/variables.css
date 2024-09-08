@@ -1,4 +1,9 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --main-color: #000028;
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --main-heading-color: #DB00FF;
+  --main-font: 'IBM Plex mono', sans-serif;
+  --page-margin: 20px;
+  --main-font-size: 18px;
+}
