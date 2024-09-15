@@ -41,14 +41,20 @@
 
 .header__theme-menu-button:focus {
   outline: none;
-}
+} 
 
 .header__theme-menu-button:focus-visible {
-  outline: 1px solid var(--accent-color);
+  outline: none;
+ border-bottom: 1px solid currentColor;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--accent-color-pale);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  outline: 1px solid currentColor;
 }
 
 .icon {
@@ -162,8 +168,16 @@
   text-shadow: 2px 2px var(--accent-color);
 }
 
+.link:hover {
+  border-block-end: 1px solid currentColor;
+}
+
 .link:focus {
   outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
 }
 
 .subarticle {

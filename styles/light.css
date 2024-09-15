@@ -7,10 +7,20 @@
   --page-margin: 20px;
   --main-font-size: 18px;
   --background-image: url(../images/cover-image-light.png);
+  --main-color-pale: #35343066;
 }
  
 .page.theme_light .header__theme-menu-button {
   color: var(--main-color);
+}
+
+.page.theme_light .header__theme-menu-button:hover {
+  outline: 1px solid var(--main-color-pale);
+}
+
+.header__theme-menu-button:focus-visible {
+ outline: none;
+ border-bottom: 1px solid currentColor;
 }
 
 .page.theme_light .icon {
