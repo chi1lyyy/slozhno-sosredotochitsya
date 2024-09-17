@@ -10,6 +10,7 @@
   --main-color-pale: #35343066;
 }
  
+/*
 .page.theme_light .header__theme-menu-button {
   color: var(--main-color);
 }
@@ -40,6 +41,8 @@
   border-block-start: 1px solid var(--main-color);
   border-inline-end: 1px solid var(--main-color);
 }
+
+*/
 
 @media (prefers-color-scheme: light) {
   :root {
