@@ -13,4 +13,5 @@
   --button-color: var(--accent-color);
   --header-color: var(--accent-color);
   --icon-opacity: 100;
+  --border-color: var(--accent-color);
 }

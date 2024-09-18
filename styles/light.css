@@ -13,6 +13,7 @@
   --button-color: var(--main-color);
   --header-color: var(--main-color);
   --icon-opacity: 0;
+  --border-color: var(--main-color);
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,5 +32,6 @@
     --button-color: var(--main-color);
     --header-color: var(--main-color);
     --icon-opacity: 0;
+    --border-color: var(--main-color);
   }
 }

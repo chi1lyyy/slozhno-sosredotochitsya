@@ -89,8 +89,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  border-block-start: 1px solid var(--accent-color, #ff0070);
-  border-inline-end: 1px solid var(--accent-color, #ff0070);
+  border-block-start: 1px solid var(--border-color, #ff0070);
+  border-inline-end: 1px solid var(--border-color, #ff0070);
   inset-inline-end: 20px;
   inset-block-start: 20px;
   inline-size: 25px;
@@ -100,8 +100,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--border-color, #ff0070);
+  border-inline-start: 1px solid var(--border-color, #ff0070);
   inset-inline-start: 20px;
   inset-block-end: 20px;
   inline-size: 25px;
