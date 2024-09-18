@@ -1,6 +1,6 @@
 :root .theme_light {
   --main-color: #353430;
-  --text-color: #353430;
+  --text-color: var(--main-color);
   --accent-color: #FF8DCB;
   --main-heading-color: #FFC2E6;
   --main-font: 'IBM Plex mono', sans-serif;
@@ -8,7 +8,8 @@
   --main-font-size: 18px;
   --background-image: url(../images/cover-image-light.png);
   --background-color: #FFF1F7;
-  --main-color-pale: #35343066;
+  --accent-color-pale: #35343066;
+  --button-color: var(--main-color);
 }
 
 
@@ -50,7 +51,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --main-color: #353430;
-    --text-color: #353430;
+    --text-color: var(--main-color);
     --accent-color: #FF8DCB;
     --main-heading-color: #FFC2E6;
     --main-font: 'IBM Plex mono', sans-serif;
@@ -58,6 +59,7 @@
     --main-font-size: 18px;
     --background-image: url(../images/cover-image-light.png);
     --background-color: #FFF1F7;
+    --main-color-pale: #35343066
   }
 
   .theme_light.icon {

@@ -37,7 +37,7 @@
   background-color: transparent;
   border: none;
   font-family: inherit;
-  color: var(--accent-color);
+  color: var(--button-color);
   text-transform: lowercase;
   padding: 0 13px;
   cursor: pointer;
