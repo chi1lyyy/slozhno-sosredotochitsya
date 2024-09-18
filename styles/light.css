@@ -1,69 +1,35 @@
 :root .theme_light {
   --main-color: #353430;
   --text-color: var(--main-color);
-  --accent-color: #FF8DCB;
-  --main-heading-color: #FFC2E6;
-  --main-font: 'IBM Plex mono', sans-serif;
+  --accent-color: #ff8dcb;
+  --main-heading-color: #ffc2e6;
+  --main-font: "IBM Plex mono", sans-serif;
   --page-margin: 20px;
+  --page-margin-mobile: 10px;
   --main-font-size: 18px;
   --background-image: url(../images/cover-image-light.png);
-  --background-color: #FFF1F7;
+  --background-color: #fff1f7;
   --accent-color-pale: #35343066;
   --button-color: var(--main-color);
+  --header-color: var(--main-color);
+  --icon-opacity: 0;
 }
-
-
- 
-/*
-.page.theme_light .header__theme-menu-button {
-  color: var(--main-color);
-}
-
-.page.theme_light .header__theme-menu-button:hover {
-  outline: 1px solid var(--main-color-pale);
-}
-
-.header__theme-menu-button:focus-visible {
- outline: none;
- border-bottom: 1px solid currentColor;
-}
-
-.page.theme_light .icon {
-  display: none;
-}
-
-.page.theme_light .section__header {
-  color: var(--main-color);
-}
-
-.page.theme_light .decorated-zone::after {
-  border-block-end: 1px solid var(--main-color);
-  border-inline-start: 1px solid var(--main-color);
-}
-
-.page.theme_light .decorated-zone::before {
-  border-block-start: 1px solid var(--main-color);
-  border-inline-end: 1px solid var(--main-color);
-}
-
-*/
 
 @media (prefers-color-scheme: light) {
   :root {
     --main-color: #353430;
     --text-color: var(--main-color);
-    --accent-color: #FF8DCB;
-    --main-heading-color: #FFC2E6;
-    --main-font: 'IBM Plex mono', sans-serif;
+    --accent-color: #ff8dcb;
+    --main-heading-color: #ffc2e6;
+    --main-font: "IBM Plex mono", sans-serif;
     --page-margin: 20px;
+    --page-margin-mobile: 10px;
     --main-font-size: 18px;
     --background-image: url(../images/cover-image-light.png);
-    --background-color: #FFF1F7;
-    --main-color-pale: #35343066
+    --background-color: #fff1f7;
+    --accent-color-pale: #35343066;
+    --button-color: var(--main-color);
+    --header-color: var(--main-color);
+    --icon-opacity: 0;
   }
-
-  .theme_light.icon {
-    display: none;
-  }
-
 }
