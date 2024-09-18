@@ -234,14 +234,14 @@
 .footer {
   block-size: 100vh;
   min-block-size: 668px;
+  display: flex;
+  flex-wrap: wrap;
   align-content: center;
-  justify-items: center;
+  justify-content: center;
 }
 
 .footer .heading {
   text-align: center;
-  align-content: center;
-  justify-content: center;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
