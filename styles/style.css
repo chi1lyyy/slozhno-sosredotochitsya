@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--main-color, #000028);
+  background-color: var(--background-color, #000028);
   background-attachment: fixed;
 }
 
@@ -14,7 +14,6 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   font-size: 18px;
-  /*justify-items: end; */
   align-items: center;
   padding: 20px 0;
 }
