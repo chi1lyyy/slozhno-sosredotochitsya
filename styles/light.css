@@ -9,6 +9,8 @@
   --background-image: url(../images/cover-image-light.png);
   --main-color-pale: #35343066;
 }
+
+
  
 /*
 .page.theme_light .header__theme-menu-button {
@@ -55,4 +57,9 @@
     --main-font-size: 18px;
     --background-image: url(../images/cover-image-light.png);
   }
+
+  .theme_light.icon {
+    display: none;
+  }
+
 }
